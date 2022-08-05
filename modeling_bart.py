@@ -13,11 +13,11 @@ import torch.nn.functional as F
 from torch import Tensor, nn
 from torch.nn import CrossEntropyLoss
 
-from transformers.activations import ACT2FN
-from transformers.configuration_bart import BartConfig
-from transformers.modeling_utils import PreTrainedModel
+from .transformers_v300.activations import ACT2FN
+from .transformers_v300.configuration_bart import BartConfig
+from .transformers_v300.modeling_utils import PreTrainedModel
 from torch_scatter import scatter_mean
-from ot import optimal_transport_dist
+from .ot import optimal_transport_dist
 
 
 logger = logging.getLogger(__name__)
