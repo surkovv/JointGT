@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='bert_dp',
+    name='JointGT',
     packages=find_packages(),
     version=1.0,
     description='JointGT adjusted to DeepPavlov',
